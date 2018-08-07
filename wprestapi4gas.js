@@ -11,7 +11,7 @@ function getwprestapi() {
 
   // get JSON data
   var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
-  var url_custom = "http://xxxxx;
+  var url_custom = "http://xxxxx";
   var url_ref = "/wp-json/wp/v2/posts?per_page=100&status=publish&orderby=date&order=desc";
   var url = url_custom + url_ref
   var json = UrlFetchApp.fetch(url).getContentText();
